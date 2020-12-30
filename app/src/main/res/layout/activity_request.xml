@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RequestActivity">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="getWithParams-@Query"
+        android:textAllCaps="false"
+        android:onClick="getWithParams"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="getWithParams-@QueryMap"
+        android:textAllCaps="false"
+        android:onClick="getWithParamsMap"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="postWithParams"
+        android:textAllCaps="false"
+        android:onClick="postWithParams"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="postWithUrl"
+        android:textAllCaps="false"
+        android:onClick="postWithUrl"/>
+
+</LinearLayout>
