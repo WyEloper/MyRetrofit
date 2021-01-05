@@ -50,7 +50,7 @@ public class RequestActivity extends AppCompatActivity {
     }
 
     /**
-     * 带参数（mapjih）的get请求
+     * 带参数（map集合）的get请求
      * @param view
      */
     public void getWithParamsMap(View view) {
