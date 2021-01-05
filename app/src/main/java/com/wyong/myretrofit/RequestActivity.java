@@ -49,6 +49,10 @@ public class RequestActivity extends AppCompatActivity {
         });
     }
 
+    /**
+     * 带参数（mapjih）的get请求
+     * @param view
+     */
     public void getWithParamsMap(View view) {
         Map<String, Object> params = new HashMap<>();
         params.put("keyword","我是搜索关键字");
