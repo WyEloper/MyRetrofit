@@ -7,7 +7,7 @@ git status ./
 git add ./
 git commit -m"update"
 git pull
-git pus
+git push
 
 
 ##快捷键
