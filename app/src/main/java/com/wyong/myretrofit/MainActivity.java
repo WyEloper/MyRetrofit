@@ -1,29 +1,24 @@
 package com.wyong.myretrofit;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-
 import android.graphics.Rect;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 
-import com.google.gson.Gson;
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
 import com.wyong.myretrofit.adapter.JsonResultListAdapter;
 import com.wyong.myretrofit.domain.JsonResult;
 import com.wyong.myretrofit.utils.RetrofitManager;
 
-import java.io.IOException;
 import java.net.HttpURLConnection;
 
-import okhttp3.ResponseBody;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
-import retrofit2.Retrofit;
-import retrofit2.converter.gson.GsonConverterFactory;
 
 /**
  * Retrofit 请求网络。
@@ -36,7 +31,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
  */
 public class MainActivity extends AppCompatActivity {
 
-    //    private static final String BASE_URL = "http://192.168.137.1:9102";
+    //    private static final String BASE_URL = "http://192.168.137.1:9102";//192.168.1.23:9102
     public static final String BASE_URL = "http://10.0.2.2:9102";
     private static final String TAG = "MainActivity";
     private RecyclerView mRecyclerView;

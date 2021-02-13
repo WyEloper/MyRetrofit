@@ -1,10 +1,13 @@
 package com.wyong.myretrofit;
 
-import androidx.appcompat.app.AppCompatActivity;
-
+import android.annotation.SuppressLint;
+import android.content.Context;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.wyong.myretrofit.domain.GetWithParamsResult;
 import com.wyong.myretrofit.domain.PostWithParamsResult;
@@ -39,6 +42,7 @@ public class RequestActivity extends AppCompatActivity {
                 Log.d(TAG,"code === > " + code);
                 if (code == HttpURLConnection.HTTP_OK) {
                     Log.d(TAG,"onResponse === > " + response.body());
+                    showToast(RequestActivity.this, "带参数的get请求成功：" + response.body());
                 }
             }
 
@@ -67,6 +71,7 @@ public class RequestActivity extends AppCompatActivity {
                 Log.d(TAG,"code === > " + code);
                 if (code == HttpURLConnection.HTTP_OK) {
                     Log.d(TAG,"onResponse === > " + response.body());
+                    showToast(RequestActivity.this, "带map参数的get请求成功：" + response.body());
                 }
             }
 
@@ -86,6 +91,7 @@ public class RequestActivity extends AppCompatActivity {
                 Log.d(TAG,"code === > " + code);
                 if (code == HttpURLConnection.HTTP_OK) {
                     Log.d(TAG,"onResponse === > " + response.body());
+                    showToast(RequestActivity.this,"带参数的post请求成功：" + response.body());
                 }
             }
 
@@ -107,6 +113,7 @@ public class RequestActivity extends AppCompatActivity {
                 Log.d(TAG,"code === > " + code);
                 if (code == HttpURLConnection.HTTP_OK) {
                     Log.d(TAG,"onResponse === > " + response.body());
+                    showToast(RequestActivity.this, "带url参数的post请求成功：" + response.body());
                 }
             }
 
@@ -116,5 +123,16 @@ public class RequestActivity extends AppCompatActivity {
             }
         });
 
+    }
+
+    private static Toast sToast;
+    @SuppressLint("ShowToast")
+    private static void showToast(Context context, String content) {
+        if (sToast == null) {
+            sToast = Toast.makeText(context.getApplicationContext(), content, Toast.LENGTH_SHORT);
+        } else {
+            sToast.setText(content);
+        }
+        sToast.show();
     }
 }
