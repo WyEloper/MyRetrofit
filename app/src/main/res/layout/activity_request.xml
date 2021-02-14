@@ -9,29 +9,78 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:onClick="getWithParams"
         android:text="getWithParams-@Query"
-        android:textAllCaps="false"
-        android:onClick="getWithParams"/>
+        android:textAllCaps="false" />
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:onClick="getWithParamsMap"
         android:text="getWithParams-@QueryMap"
-        android:textAllCaps="false"
-        android:onClick="getWithParamsMap"/>
+        android:textAllCaps="false" />
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:onClick="postWithParams"
         android:text="postWithParams"
-        android:textAllCaps="false"
-        android:onClick="postWithParams"/>
+        android:textAllCaps="false" />
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:onClick="postWithUrl"
         android:text="postWithUrl"
-        android:textAllCaps="false"
-        android:onClick="postWithUrl"/>
+        android:textAllCaps="false" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="postWithBody"
+        android:text="postWithBody"
+        android:textAllCaps="false" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="postFile"
+        android:text="postFile"
+        android:textAllCaps="false" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="postFiles"
+        android:text="postFiles"
+        android:textAllCaps="false" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="postFilesWithParams"
+        android:text="postFilesWithParams"
+        android:textAllCaps="false" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="doLogin"
+        android:text="doLogin"
+        android:textAllCaps="false" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="doLoginWithMap"
+        android:text="doLoginWithMap"
+        android:textAllCaps="false" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="downloadFile"
+        android:text="downloadFile"
+        android:textAllCaps="false" />
 
 </LinearLayout>
